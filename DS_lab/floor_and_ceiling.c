@@ -4,7 +4,6 @@
 int main(void)
 {
     double num, floored, ceiled;
-    char again;
     printf("Enter a floating value: ");
     scanf("%lf", &num);
     floored = floor(num);
