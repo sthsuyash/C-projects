@@ -1,4 +1,4 @@
-/**** algorithm ( Join of two boolean matrices ) ****/
+/**** algorithm ( Product of two boolean matrices ) ****/
 #include <stdio.h>
 
 int main(void)
