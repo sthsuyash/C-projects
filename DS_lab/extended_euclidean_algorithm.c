@@ -28,6 +28,6 @@ int main()
     d = a;
     s = s2;
     t = t2;
-    printf("gcd(%d,%d) is %d with coefficients %d and %d respectively.", x, y, d, s, t);
+    printf("G.C.D (%d,%d) is %d with coefficients %d and %d respectively.", x, y, d, s, t);
     return 0;
 }

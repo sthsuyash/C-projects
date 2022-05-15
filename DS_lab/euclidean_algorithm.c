@@ -6,9 +6,9 @@ int main(void)
     int x, y;
     int a, b, r;
 
-    printf("Enter value for a: ");
+    printf("Enter value for x: ");
     scanf("%d", &x);
-    printf("Enter value for b: ");
+    printf("Enter value for y: ");
     scanf("%d", &y);
     a = x, b = y;
 

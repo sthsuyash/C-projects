@@ -34,7 +34,7 @@ int main(void)
     }
 
     // entering data for matrix B
-    printf("\nEnter data for boolean matrix A:\n");
+    printf("\nEnter data for boolean matrix B:\n");
     for (int i = 0; i < rows2; i++)
     {
         for (int j = 0; j < columns2; j++)
