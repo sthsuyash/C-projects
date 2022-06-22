@@ -12,21 +12,26 @@ int main(void)
     int n; // variable to store the number of equations
     printf("Enter the number of equations: ");
     scanf("%d", &n);
-    int *m = NULL, *a = NULL, *s = NULL, *Mk = NULL; // declare and initialize the pointers to NULL
+    /** allocate array sizes for variables **/
+    int m[n], a[n], s[n], Mk[n];
+    // int *m = NULL, *a = NULL, *s = NULL, *Mk = NULL; // declare and initialize the pointers to NULL
 
     // dynamically allocating the size of pointers
-    m = malloc(n * sizeof(int));
-    a = malloc(n * sizeof(int));
-    s = malloc(n * sizeof(int));
-    Mk = malloc(n * sizeof(int));
-
+    // m = malloc(n * sizeof(int));
+    // a = malloc(n * sizeof(int));
+    // s = malloc(n * sizeof(int));
+    // Mk = malloc(n * sizeof(int));
+    
+    
     // loop to input the value of a and m form the expected number of equations
     for (int i = 0; i < n; i++)
     {
         printf("Enter the value of a%d:", i + 1);
-        scanf("%d", (a + i));
+        // scanf("%d", (a + i));
+        scanf("%d", &a[i]);
         printf("Enter the value of m%d:", i + 1);
-        scanf("%d", (m + i));
+        // scanf("%d", (m + i));
+        scanf("%d", &m[i]);
     }
 
     // displaying the equations
@@ -40,17 +45,19 @@ int main(void)
     // loop to calculate the product of all m's in the equation
     for (int i = 0; i < n; i++)
     {
-        M = M * *(m + i);
+        // M = M * *(m + i);
+        M = M * m[i];
     }
     // loop to calculate the value of individual M's required
     for (int i = 0; i < n; i++)
     {
-        *(Mk + i) = M / *(m + i);
+        // *(Mk + i) = M / *(m + i);
+        Mk[i] = M / m[i];
     }
     // loop to calculate the inverse s[i] for corresponding Mk[i] and m[i]
     for (int i = 0; i < n; i++)
     {
-        *(s + i) = inverse(*(Mk + i), *(m + i)); // s[i] = inverse(Mk[i], m[i])
+        s[i] = inverse(Mk[i], m[i]);  // *(s + i) = inverse(*(Mk + i), *(m + i)); 
     }
     int x = 0; // calculate the answer
     // loop to calculate the value of x by the formula of chinese remainder theorem
@@ -60,10 +67,10 @@ int main(void)
     }
 
     // free the dynamic variables
-    free(m);
-    free(a);
-    free(s);
-    free(Mk);
+    // free(m);
+    // free(a);
+    // free(s);
+    // free(Mk);
 
     // display the data
     printf("x: %d", x);
