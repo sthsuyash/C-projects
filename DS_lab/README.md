@@ -1,7 +1,7 @@
 # Algorithms used in Discrete Structure class #
 
 ### IMP: ###
-Remove <ins>*comments*</ins> in code during practical.
+Remove ***<ins>comments<ins/>*** in code during practical.
 
 ## Contents: ##
 - [Addition of Two Bit Strings](https://github.com/sthsuyash/C-projects/blob/main/DS_lab/additionOf_two_bit_strings.c)
