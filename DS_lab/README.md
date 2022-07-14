@@ -1,6 +1,7 @@
 # Algorithms used in Discrete Structure class #
 
-## Contents: ##
+## Contents ##
+
 - [Addition of Two Bit Strings](https://github.com/sthsuyash/C-projects/blob/main/DS_lab/additionOf_two_bit_strings.c)
 - [Boolean Product of Two Matrices](https://github.com/sthsuyash/C-projects/blob/main/DS_lab/boolean_product.c)
 - [Chinese Remainder Theorem](https://github.com/sthsuyash/C-projects/blob/main/DS_lab/chinese_remainder_theorem.c)

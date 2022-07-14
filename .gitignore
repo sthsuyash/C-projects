@@ -1,4 +1,5 @@
 # don't add any files containing .exe from the DS_lab directory
 **/DS_lab/*.exe
-**/Numerical_Method/*.exe
+# don't add any files containing .exe from the Numerical_Method directory and it's children subdirectory
+**/Numerical_Method/*/*.exe
 **/.vscode/
