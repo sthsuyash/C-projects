@@ -1,3 +1,4 @@
 # don't add any files containing .exe from the DS_lab directory
 **/DS_lab/*.exe
+**/Numerical_Method/*.exe
 **/.vscode/
