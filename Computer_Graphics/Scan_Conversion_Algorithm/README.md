@@ -1,4 +1,4 @@
-- [Digital Analyzer Algorithm]()
+- [Digital Analyzer Algorithm](https://github.com/sthsuyash/C-projects/blob/main/Computer_Graphics/Scan_Conversion_Algorithm/DDA.cpp)
 
 ```README
     • Step 1:
@@ -41,7 +41,7 @@
     `
 ```
 
-- [Bresenham's Line Drawing Algorithm]()
+- [Bresenham's Line Drawing Algorithm](https://github.com/sthsuyash/C-projects/blob/main/Computer_Graphics/Scan_Conversion_Algorithm/Bresenham.cpp)
 
 ```README
 Given coordinate of two points A(x1, y1) and B(x2, y2).
