@@ -2,7 +2,9 @@
 
 ## [Scan Conversion Algorithm](https://www.javatpoint.com/computer-graphics-scan-conversion-definition)
 
-```The process of representing continuous graphics object as a collection of discrete pixels is known as scan conversion.```
+```README
+The process of representing continuous graphics object as a collection of discrete pixels is known as scan conversion.
+```
 
 1. Scan Converting a Point and a straight Line:
    - [Digital Analyzer Algorithm](https://github.com/sthsuyash/C-projects/blob/main/Computer_Graphics/Scan_Conversion_Algorithm/DDA.cpp)
@@ -10,8 +12,8 @@
      <br><br>
 
 2. Scan Converting Circle and Ellipse:
-   - [Mid Point Circle Algorithm]() 
-   - [Ellipse Algorithm]()
+   - [Mid Point Circle Algorithm](https://github.com/sthsuyash/C-projects/blob/main/Computer_Graphics/Scan_Conversion_Algorithm/circle.cpp) 
+   - [Ellipse Algorithm](https://github.com/sthsuyash/C-projects/blob/main/Computer_Graphics/Scan_Conversion_Algorithm/ellipse.cpp)
 <br><br>
 
 3. Area Filling:
