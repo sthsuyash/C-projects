@@ -53,10 +53,13 @@
 //DDA Function for line generation
 void DDA(int X0, int Y0, int X1, int Y1)
 {
+	int gd = DETECT, gm;
+    // Initialize graphics function
+    initgraph (&gd, &gm, "");
 	/*
 	// Step 1:
 	getting input of two end points from user, 
-	which is passed as function arguements from main function
+		=> passed as function arguements from main function in this case.
 	*/
 	
 	/*
@@ -93,8 +96,10 @@ void DDA(int X0, int Y0, int X1, int Y1)
         putpixel (round(X),round(Y),WHITE);  // put pixel at (X,Y) with color white
         X += Xinc;           // increment in x at each step
         Y += Yinc;           // increment in y at each step
-        delay(100);          // for visualization of generation step by step
+        // delay(100);          // for visualization of generation step by step
     }
+    getch();
+    closegraph();
     
     printf("\n\nDDA Completed.");
 }
@@ -102,24 +107,17 @@ void DDA(int X0, int Y0, int X1, int Y1)
 // Driver program
 int main()
 {
-    int gd = DETECT, gm;
-    // Initialize graphics function
-    initgraph (&gd, &gm, "");
     // declaring necessary points
     int X0, Y0, X1, Y1;
     
     // scanning the points for drawing
-    printf("Enter the initial X-cordinates: "); 
-	scanf("%d", &X0);
-    printf("Enter the initial Y-cordinates: ");
-	scanf("%d", &Y0);
+    printf("Enter the initial cordinates: "); 
+	scanf("%d %d", &X0, &Y0);
 	printf("Enter the final X-coordinates: ");
-	scanf("%d", &Y0);
-	printf("Enter the final Y-cordinates: ");
-	scanf("%d", &Y1);
+	scanf("%d %d", &X1, &Y1);
 	
 	// implement the DDA algorithm code
-    DDA(2, 2, 14, 16);
+    DDA(X0,Y0,X1,Y1);
     
     // hold the display of line until any key is pressed.
     getch();
