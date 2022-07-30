@@ -1,6 +1,6 @@
 # All the algorithms and programs for Computer Graphics using C++
 
-## [Scan Conversion Algorithm](https://www.javatpoint.com/computer-graphics-scan-conversion-definition)
+## [Scan Conversion Algorithm](https://github.com/sthsuyash/C-projects/tree/main/Computer_Graphics/Scan_Conversion_Algorithm)
 
 ```README
 The process of representing continuous graphics object as a collection of discrete pixels is known as scan conversion.
